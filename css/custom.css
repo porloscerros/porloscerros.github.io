@@ -1,4 +1,3 @@
-
 html, body {
   background-color: #fff;
   color: #636b6f;
@@ -6,70 +5,37 @@ html, body {
   overflow-x:hidden;
 }
 
-img {
-    padding: 60px;
-    max-width: 100%;
-    height: auto;
-}
-@media (max-width: 575px) {
-  img {
-      padding: 75px;
-      max-width: 100%;
-      height: auto;
-      margin-top: 75px;
-      margin-bottom: 75px;
-  }
-}
-.links > a {
-  color: #636b6f;
-  padding: 25px;
-  font-weight: 600;
-  font-size: 20px;
-  letter-spacing: .1rem;
-  text-decoration: none;
-  text-transform: uppercase;
- }
- .links > a:hover {
-    color: #4d5356; }
- @media (max-width: 575px) {
-    .links > a{font-size: 10px;}
- }
-
- p{
+p{
    line-height:1.75
    color:#000!important;
- }
+}
 
- h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6{
    font-weight:700;
- }
- section{
-   padding:100px 0
- }
- @media (min-width:768px){
-   section{
-     padding:150px 0
-     }
-  }
+}
+
+section{
+   padding:50px 0;
+}
 
 ::-moz-selection{
-background:#636b6f;
-color: white;
-text-shadow:none
+  background:#636b6f;
+  color: white;
+  text-shadow:none;
 }
 ::selection{
-background:#636b6f;
-color: white;
-text-shadow:none
+  background:#636b6f;
+  color: white;
+  text-shadow:none;
 }
 img::selection{
-    background:0 0
+    background:0 0;
 }
 img::-moz-selection{
-    background:0 0
+    background:0 0;
 }
 body{
-    -webkit-tap-highlight-color:#636b6f
+    -webkit-tap-highlight-color:#636b6f;
 }
 
 #mainNav{
@@ -130,19 +96,59 @@ header.masthead {
   text-align: center;
 }
 
-.text-muted{color:#000!important;}
-.dark-background{background-color:#636b6f!important;}
+img {
+    margin-top: 75px;
+    padding: 75px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.links > a {
+  color: #636b6f;
+  letter-spacing: .1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 15px;
+  font-weight: 600;
+ }
+ .links > a:hover {
+    color: #4d5356;
+}
+
+.text-muted{
+  color:#000!important;
+}
+.dark-background{
+  background-color:#636b6f!important;
+}
 
 section#contact{
     background-color:#fff;
 }
-section#contact .section-heading{color:#636b6f}
+section#contact .section-heading{
+  color:#636b6f;
+}
 
-footer{padding:25px 0;text-align:center;}
-footer span.copyright{font-size:90%;line-height:40px;text-transform:none;}
-footer ul.quicklinks{font-size:90%;line-height:40px;margin-bottom:0;text-transform:none;}
+footer{
+  padding:25px 0;
+  text-align:center;
+}
+footer span.copyright{
+  font-size:90%;
+  line-height:40px;
+  text-transform:none;
+}
+footer ul.quicklinks{
+  font-size:90%;
+  line-height:40px;
+  margin-bottom:0;
+  text-transform:none;
+}
+
 ul.social-buttons{
-    margin-bottom:0
+    margin-bottom:0;
 }
 ul.social-buttons li a{
     font-size:20px;
@@ -156,8 +162,72 @@ ul.social-buttons li a{
     color:#fff;
     border-radius:100%;
     outline:0;
-    background-color:#212529
+    background-color:#212529;
 }
 ul.social-buttons li a:active,ul.social-buttons li a:focus,ul.social-buttons li a:hover{
-    background-color:#636b6f
+    background-color:#636b6f;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+     No media query since this is the default in Bootstrap */
+     
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  section{
+    padding:100px 0;
+    }
+  img {
+      margin-top: 150px;
+      padding: 25px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 100px;
+  }
+  section#contact{
+      margin-bottom: 25px;
+  }
+  .links > a{
+     font-size: 15px;
+     padding: 25px;
+     font-weight: 600;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  section{
+    padding:125px 0;
+    }
+  img {
+      margin-top: 150px;
+      padding: 25px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 150px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  section{
+    padding:150px 0;
+    }
+  img {
+      margin-top: 0;
+      padding: 50px;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 0;
+  }
+  .links > a{
+     font-size: 20px;
+     padding: 25px;
+     font-weight: 600;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
