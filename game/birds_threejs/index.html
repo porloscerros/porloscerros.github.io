@@ -13,7 +13,17 @@
 				font-size:13px;
 				text-align:center;
 				text-align:center;
-				cursor: pointer;
+			}
+			.grabbable {
+			    cursor: move; /* fallback if grab cursor is unsupported */
+			    cursor: grab;
+			    cursor: -moz-grab;
+			    cursor: -webkit-grab;
+			}
+
+			 /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+			.grabbable:active {
+				cursor: not-allowed;
 			}
 			a {
 				color:#0078ff;
@@ -36,11 +46,12 @@
       gtag('config', 'UA-112745077-1');
     </script>
 	</head>
-	<body>
+	<body class="grabbable">
 
 		<div id="info">
 			<span id="birds"></span> volando<br/>
 			<span id="options"></span> pájaros<br/>
+			<span id="credits"></span>credits <a target="_blank" href="https://threejs.org/">threejs</a><br/>
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
