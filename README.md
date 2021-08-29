@@ -1,3 +1,24 @@
-<p align="center"><img src="https://porloscerros.github.io/img/portada-logo.svg"></p>
-<h1 align="center">My personal page</h1>
-<h3 align="center">[porloscerros.github.io](https://porloscerros.github.io)</h3>
+# porloscerros.github.io
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
