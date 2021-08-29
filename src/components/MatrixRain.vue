@@ -61,6 +61,16 @@ export default {
     canvas.height = window.innerHeight;
     this.canvas = canvas;
     this.ctx = canvas.getContext("2d");
+    window.onresize = () => {
+      this.canvas.width = window.innerWidth;
+      this.canvas.height = window.innerHeight;
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      this.init();
+    };
+    window.addEventListener('click', () => {
+      this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+      this.init();
+    });
     this.init();
     this.render();
   },
